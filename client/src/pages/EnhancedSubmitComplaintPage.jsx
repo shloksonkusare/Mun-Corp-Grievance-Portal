@@ -64,10 +64,12 @@ async function callClassifyAPI(imageBlob) {
 
 // ─── Category metadata ────────────────────────────────────────────────────────
 const CATEGORY_META = {
-  DamagedRoads:          { icon: '🛣️', color: 'bg-orange-100 text-orange-700 border-orange-200', label: 'Damaged Roads' },
-  ElectricityIssues:     { icon: '💡', color: 'bg-yellow-100 text-yellow-700 border-yellow-200', label: 'Electricity Issues' },
-  GarbageAndSanitation:  { icon: '🗑️', color: 'bg-green-100 text-green-700 border-green-200', label: 'Garbage & Sanitation' },
-  Other:  { icon: '🗒️', color: 'bg-blue-100 text-green-700 border-green-200', label: 'Other' },
+  "Damaged Road Issue":        { icon: '🛣️', color: 'bg-orange-100 text-orange-700 border-orange-200', label: 'Damaged Road Issue' },
+  "Fallen Trees":               { icon: '🌳', color: 'bg-green-100 text-green-700 border-green-200', label: 'Fallen Trees' },
+  "Garbage and Trash Issue":   { icon: '🗑️', color: 'bg-emerald-100 text-emerald-700 border-emerald-200', label: 'Garbage and Trash Issue' },
+  "Illegal Drawing on Walls":  { icon: '🎨', color: 'bg-pink-100 text-pink-700 border-pink-200', label: 'Illegal Drawing on Walls' },
+  "Street Light Issue":        { icon: '💡', color: 'bg-yellow-100 text-yellow-700 border-yellow-200', label: 'Street Light Issue' },
+  "Other":                     { icon: '📋', color: 'bg-gray-100 text-gray-700 border-gray-200', label: 'Other' },
 };
 
 // Fallback for unknown categories returned by AI

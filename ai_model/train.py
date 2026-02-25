@@ -130,7 +130,7 @@ def main():
     parser = argparse.ArgumentParser(description="Train municipal complaint classifier")
     parser.add_argument("--dataset",    default="dataset",              help="Root dataset dir")
     parser.add_argument("--output",     default="weights/classifier.pt", help="Where to save weights")
-    parser.add_argument("--epochs",     type=int,   default=20)
+    parser.add_argument("--epochs",     type=int,   default=10)
     parser.add_argument("--batch",      type=int,   default=32)
     parser.add_argument("--lr",         type=float, default=1e-3)
     parser.add_argument("--workers",    type=int,   default=4)

@@ -32,23 +32,11 @@ ai_model/
 
 **Make sure the .env file present in the server folder has all the necessary connection string mentioned before running the following commands**
 
-1. Create the virtual environment and activate it in the ```ai_model``` folder using the following commands (in Windows)
+Open the Powershell terminal in the root directory and type the follwoing command:
 ```
-cd ai_model
-python -m venv venv
-venv\Scripts\activate
-```
-2. Install the required packages mentioned in requirements.txt
-```
-pip install -r requirements.txt
-```
-
-3. Return into the root directory then run the following commands one by one.
-```
-cd ..
-npm install
 npm run dev
 ```
+The project will be running live locally on `5173` port.
 
 ## How to Run the Project (Starting each module seperately)
 

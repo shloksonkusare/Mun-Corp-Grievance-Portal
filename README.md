@@ -9,6 +9,8 @@
 - Road & Garbage Dataset: https://data.mendeley.com/datasets/zndzygc3p3/2
 - Street Light Dataset (Electricity Issues): https://github.com/Team16Project/Street-Light-Dataset
 
+Or you can use the following dataset made by me: https://www.kaggle.com/datasets/shloksonkusare2/municipal-social-issues-dataset/data
+
 #### Directory Structure
 - Arrange the dataset properly in the following structure
 ```
@@ -26,7 +28,29 @@ ai_model/
 - To add the classes, simply add the folder as a new class in the dataset folder and add images in it.
 
 
-## How to Run the Project
+## How to Run the Project (all modules concurrently)
+
+**Make sure the .env file present in the server folder has all the necessary connection string mentioned before running the following commands**
+
+1. Create the virtual environment and activate it in the ```ai_model``` folder using the following commands (in Windows)
+```
+cd ai_model
+python -m venv venv
+venv\Scripts\activate
+```
+2. Install the required packages mentioned in requirements.txt
+```
+pip install -r requirements.txt
+```
+
+3. Return into the root directory then run the following commands one by one.
+```
+cd ..
+npm install
+npm run dev
+```
+
+## How to Run the Project (Starting each module seperately)
 
 #### 1. How to start the AIML Backend
 1. Create the virtual environment and activate it in the ```ai_model``` folder using the following commands (in Windows)
